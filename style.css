@@ -32,7 +32,7 @@ header::after{
     transform: translate(-50%);
     left: 100px;
     height: 5px;
-    width: 50%;
+    width: 70%;
     background: linear-gradient(90deg, var(--primary), transparent);
 }
 .logo{
@@ -71,4 +71,49 @@ header .menu.active{
     background-position: center;
     filter: invert(1);
     cursor: pointer;
+}
+
+/* Navigation */
+.nav{
+    z-index: 200;
+    position: absolute;
+    right: 100px;
+    top: 0;
+    width: 30%;
+    height: 5px;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(
+        90deg,
+        transparent,
+        var(--primary),
+        var(--primary)
+    )
+    30;
+    background: transparent;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    transform-origin: right;
+}
+.nav.active{
+    top: 100px;
+    width: 40%;
+    height: 5px;
+    border-top: 5px solid;
+    border-image: linear-gradient(
+        90deg,
+        transparent,
+        var(--primary),
+        var(--primary),
+        transparent
+    )
+    30;
+    border-bottom: none;
+}
+.nav li{
+    opacity: 0;
+    visibility: hidden;
 }
