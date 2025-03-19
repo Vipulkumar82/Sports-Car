@@ -260,10 +260,10 @@ header .menu.active{
 /* Screen */
 .banner .screen{
     position: absolute;
-    right: 12%;
-    bottom: 100px;
-    width: 160px;
-    height: 120px;
+    right: 8%;
+    bottom: 70px;
+    width: 200px;
+    height: 170px;
     transform-style: preserve-3d;
     animation: animate 30s linear infinite;
     z-index: 100;
@@ -296,7 +296,7 @@ header .menu.active{
     height: 100%;
     overflow: hidden;
     background: linear-gradient(transparent, var(--primary));
-    transform: rotateY(calc(90deg * var(--i))) translateZ(80px);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(100px);
     /* 160px/2=80px */
 }
 
@@ -315,4 +315,22 @@ header .menu.active{
     0 0 120px rgba(0, 194, 222, 0.6),
     0 0 120px rgba(0, 194, 222, 0.8),
     0 0 120px rgba(0, 194, 222, 1);
+}
+
+/* Screen Video */
+
+.screen div span video{
+    position: absolute;
+    bottom: 0;
+    height: 75%;
+    width: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+    object-position: center;
+}
+.trailer{
+    display: none;
+}
+.trailer.active{
+    display: block;
 }
