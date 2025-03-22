@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Car</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -152,7 +153,34 @@
                 </span>
             </div>
         </div>
+        <div class="gallery">
+            <div class="carousel">
+                <a class="carousel-item" href="#">
+                    <img src="./images/mclaren-1.jpg" alt="">
+                </a>
+                <a class="carousel-item" href="#">
+                    <img src="./images/mclaren-2.jpg" alt="">
+                </a>
+                <a class="carousel-item" href="#">
+                    <img src="./images/mclaren-3.jpeg" alt="">
+                </a>
+                <a class="carousel-item" href="#">
+                    <img src="./images/mclaren-4.jpeg" alt="">
+                </a>
+                <a class="carousel-item" href="#">
+                    <img src="./images/mclaren-4.jpeg" alt="">
+                </a>
+              </div>
+        </div>
     </div>
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="./script.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.carousel').carousel();
+    });
+</script>
 </html>
