@@ -19,4 +19,18 @@ function changeVideo(name){
             video.classList.add('active');
         }
     });
+
+    models.forEach(model => {
+        model.classList.remove('active');
+        if (model.classList.contains(name)){
+            model.classList.add('active');
+        }
+    });
+
+    trailers.forEach(trailer => {
+        trailer.classList.remove('active');
+        if (trailer.classList.contains(name)){
+            trailer.classList.add('active');
+        }
+    });
 }
